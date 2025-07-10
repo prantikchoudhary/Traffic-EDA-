@@ -17,7 +17,7 @@ API Used : /api/traffic at **https://opendata.citywindsor.ca/swagger/index.html
 
 ![Screen Shot 2025-07-08 at 10 50 20 PM](https://github.com/user-attachments/assets/64599dbd-69c5-404d-92a6-d621acd511b0)
 
-### 🔶 Step 1.2 |Performing EDA
+### 🔶 Step 1.2 | Performing EDA
 
 ![Screen Shot 2025-07-08 at 10 53 08 PM](https://github.com/user-attachments/assets/5b35301f-12df-487e-a61e-845a3c8a040f)
 
@@ -61,7 +61,7 @@ The correlation value of 0.4265 shows there is only a 42% correlation between th
 
 ![Screen Shot 2025-07-08 at 11 03 18 PM](https://github.com/user-attachments/assets/2450945a-703f-449a-90a3-4470f48342af)
 
-### 🔶 Step 3.3 |Line Graph for Total Traffic Count and Large Vehicle Count
+### 🔶 Step 3.3 | Line Graph for Total Traffic Count and Large Vehicle Count
 
 
 ![Screen Shot 2025-07-08 at 11 03 53 PM](https://github.com/user-attachments/assets/3726ae06-2a8e-4eaf-b438-7c2adf2ee98c)
