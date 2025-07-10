@@ -68,12 +68,12 @@ df['is_large_vehicle'] = df['vehicleType'].isin(['Articulated Truck', 'SingleUni
 # For hourly aggregation
 hourly_data = df.groupby([pd.Grouper(key='timeStamp', freq='h')])['qty'].sum().reset_index(name='total_traffic')
 
-# Group by timestamp
+# Group by large vehicle count 
 # For hourly aggregation
-hourly_data = df.groupby([pd.Grouper(key='timeStamp', freq='h')])['qty'].sum().reset_index(name='total_traffic')
+large_vehicle_count = df[df['is_large_vehicle']].groupby(pd.Grouper(key='timeStamp', freq='h'))['qty'].sum().reset_index(name='large_vehicle_count')
 
 # Merge the above two datasets
-merged_data = pd.merge(hourly_data, large_vehicles, on='timeStamp', how='left')
+merged_data = pd.merge(hourly_data, large_vehicle_count, on='timeStamp', how='left')
 merged_data['large_vehicle_count'] = merged_data['large_vehicle_count'].fillna(0)
 
 # Calculate percentage of large vehicles
