@@ -56,17 +56,33 @@ The correlation value of 0.4265 shows there is only a 42% correlation between th
 
 ![Screen Shot 2025-07-08 at 11 02 39 PM](https://github.com/user-attachments/assets/d0f5ce3e-1bd1-499f-b09e-3b2da9be0017)
 
+#### Key Insights :
+1. Weak or No Strong Linear Correlation (points are widely scattered).
+2. Several points to the left (where large vehicle count is low) have very high traffic volumes.
+3. Traffic congestion is much more affected by (small vehicle count, signals and road conditions) than large vehicles.
+
 ### 🔶 Step 3.2 | Trendline
 
 
 ![Screen Shot 2025-07-08 at 11 03 18 PM](https://github.com/user-attachments/assets/2450945a-703f-449a-90a3-4470f48342af)
+
+#### Key Insights :
+1. Slightly positive linear relationship - red line slopes upward, where there are more large vehicles in an hour the traffic tends to be higher as well.
+2. Wide Confidence Interval (shaded pink region) - Means the regression model is not much certain about its prediction for total traffic at different counts of larger vehicles.
+3. Trendline shows a statistical relationship and not causation.
 
 ### 🔶 Step 3.3 | Line Graph for Total Traffic Count and Large Vehicle Count
 
 
 ![Screen Shot 2025-07-08 at 11 03 53 PM](https://github.com/user-attachments/assets/3726ae06-2a8e-4eaf-b438-7c2adf2ee98c)
 
-# Inferences
+#### Key Insights :
+1. Total traffic’s rush hour peaks don’t always correspond to peaks in large vehicle count.
+2. The two lines do not move together very closely. This visual observation matches your earlier findings (low correlation coefficient, weak linear relationship, wide scatter and confidence bands).
 
-1. content
-2. content
+# Conclusion
+
+1. On average, more large vehicles being present slightly coincides with more traffic, but it does not account for all the variation in total traffic.
+2. While you could use the line to predict total traffic from large vehicle count, the wide shaded region suggests predictions will be imprecise.
+3. Practical Implication - Traffic management or congestion mitigation strategies should not focus exclusively on regulating large vehicle counts, since total volume is influenced by other factors as well.
+
